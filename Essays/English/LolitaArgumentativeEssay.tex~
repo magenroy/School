@@ -1,0 +1,13 @@
+\documentclass[12pt]{article}
+\usepackage{setspace}
+\doublespacing
+\begin{document}
+\begin{titlepage}
+  \noindent Lolita Argumentative Essay \\
+  By: Roy Magen \\
+  For: Ms. Lefolii \\
+  Date: 15/04/14 \\
+  Draft: 1
+\end{titlepage}
+Vladimir Nabokov's \textit{Lolita}
+\end{document}
