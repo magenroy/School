@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+	\begin{gather}
+		y = \ln x \\
+		e^y = x \\
+		e^y \frac{\delta y}{\delta x} = 1 \\
+		\frac{\delta y}{\delta x} = \frac{1}{e^y} \\
+		\frac{\delta y}{\delta x} = \frac{1}{x} \\
+		\boxed{\frac{\delta \ln x}{\delta x} = \frac{1}{x}} \nonumber
+	\end{gather}
+	\\ \setcounter{equation}{0}
+	\begin{gather}
+		\frac{\delta b^x}{\delta x} = \frac{\delta e^{x\ln b}}{\delta x} \\
+		= \ln be^{x\ln b} \\
+		= \ln bb^x \\
+		\boxed{\frac{\delta b^x}{\delta x} = \ln bb^x} \nonumber
+	\end{gather}
+	\\ \setcounter{equation}{0}
+	\begin{gather}
+		y = \log_bx \\
+		b^y = x \\
+		\ln bb^y\frac{\delta y}{\delta x} = 1 \\
+		\frac{\delta y}{\delta x} = \frac{1}{\ln bb^y} \\
+		= \frac{1}{x\ln b} \\
+		\boxed{\frac{\delta \log_bx}{\delta x} = \frac{1}{x\ln b}} \nonumber
+	\end{gather}
+
+\end{document}
