@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\begin{document}
+
+	Length of time for growth depends size of item \\
+	\begin{gather*}
+		\frac{\delta y}{\delta t} \propto y \\
+		\frac{\delta y}{\delta t} = y \\
+		\\
+		y = y_0e^{kt}
+	\end{gather*}
+	
+	Bacterial culture starts with 2000 individials, grows to 10 000 after 3hrs
+	\begin{gather*}
+		y_0 = 2000 \\
+		10000 = 2000e^{3k} \\
+		5 = e^{3k} \\ 
+		\ln 5 = 3k \\
+		k = \frac{\ln 5}{3}
+	\end{gather*}	
+	\begin{enumerate} 
+		\item Find expression for size of population after $ t $ hours
+			$$ y = 2000e^{\frac{t \ln 5}{3}} $$
+		\item What is population at 2hrs?
+			$$ y = 2000e^{\frac{2 \ln 5}{3}} = $$
+		\item How quickly is population growing at 2hr?
+			\begin{gather}
+				\frac{\delta 2000e^{\frac{t \ln 5}{3}}}{\delta t} \\
+				= 2000e^{\frac{t \ln 5}{3}}\frac{\ln 5}{3} \\
+				t = 2 \text{hrs}\\
+				2000e^{\frac{2 \ln 5}{3}}\frac{\ln 5}{3} =  
+			\end{gather}
+		\item when will population reach 18000 individuals?
+			\begin{gather}
+				y = 18000 \\
+				18000 = 2000e^{\frac{t \ln 5}{3}} \\
+				9 = e^{\frac{t \ln 5}{3}} \\
+				\ln 9 = \frac{t \ln 5}{3} \\
+				\frac{3 \ln 9}{\ln 5} = t
+			\end{gather}
+	\end{enumerate}
+
+	Sample of Nicolium-17 has half-life of 140 days and same is 300mg
+	\begin{gather*}
+		y_0 = 300 \\
+		y = \frac{300}{2} \\
+		t = 140 \\
+		150 = 300e^{140k} \\
+		\frac{1}{2} = e^{140k} \\
+		\ln \frac{1}{2} = 140k \\
+		k = \frac{-\ln 2}{140} 
+	\end{gather*}
+	\begin{enumerate}
+		\item Find amount of Nicolium-17 after $ t $ days
+			$$ y = 300e^{\frac{-t \ln 2}{140}} $$
+		\item Find amount after 50 days
+			$$ 300e^{\frac{-50 \ln 2}{140}} = $$
+		\item How quickly decaying on 50\textsuperscript{th} day?
+			\begin{gather}
+				\frac{\delta 300e^{\frac{-t \ln 2}{140}}}{\delta t} \\
+				= -300e^{\frac{-t \ln 2}{140}}\frac{\ln 2}{140} \\
+				t = 50 \text{days} \\
+				-300e^{\frac{-50 \ln 2}{140}}\frac{\ln 2}{140} =
+			\end{gather}
+		\item When will sample have mass 200mg?
+			\begin{gather}
+				200 = 300e^{\frac{-t \ln 2}{140}} \\
+				asdf
+			\end{gather}
+	\end{enumerate}
+
+	Suriya invests \$1000 in account pays 12\% p.a for 5 years \\
+	Calculate total if interest compounded \begin{enumerate}
+		\item annually
+			\begin{gather}
+				A = P\left(1 + \frac{i}{n}\right)^{nt} \\
+				= 1000\left(1 + 0.12)^5 =
+			\end{gather}
+		\item monthly
+			\begin{gather}
+				A = 1000\left(1 + \frac{0.12}{12})^{5 \times 12}
+			\end{gather}
+		\item daily (no leap years)
+			\begin{gather}
+				A = 1000\left(1 + \frac{0.12}{365})^{5 \times 365}
+			\end{gather}
+		\item continuously
+			\begin{gather}
+				A = Pe^{rt} \\
+				= 1000e^{0.12 \times 5}
+			\end{gather}
+
+
+\end{document}
