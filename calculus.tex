@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{Calculus Reference Sheet}
+\author{Roy Magen}
+\date{ }
+\begin{document}
+
+	\newcommand{\deriv}[2][x]{\frac{d #2}{d #1}}
+	\newcommand{\antider}[2][x]{\int #2\,d#1}
+	\newcommand{\defint}[4][x]{\int_#2^#3 #4 d#1}
+
+	\maketitle
+	
+	\tableofcontents
+
+	\section{Differentiation}
+		\subsection{Linearity}
+			\begin{gather}
+				\deriv{af(x)} = a\deriv{f(x)} \\
+				\deriv{f(x) + g(x)} = \deriv{f(x)} +
+				\deriv{g(x)} \\
+				\therefore \deriv{af(x) + bg(x)} = a\deriv{f(x)}
+				+ b\deriv{g(x)}
+			\end{gather}
+		\subsection{Methods}
+			\subsubsection{First Principles}
+				\begin{gather}
+					\deriv{f(x)} = \frac{f(x + h) -
+					f(x)}{h}
+				\end{gather}
+			\subsubsection{Power Rule}
+				\begin{gather}
+					\deriv{x^n} = nx^{n-1}
+				\end{gather}
+			\subsubsection{Product Rule}
+				\begin{gather}
+					\deriv{f(x)g(x)} = g(x)\deriv{f(x)} +
+					f(x)\deriv{g(x)}
+				\end{gather}
+			\subsubsection{Quotient Rule}
+				\begin{gather}
+					\deriv{\frac{f(x)}{g(x)}} =
+					\frac{g(x)\deriv{f(x)} -
+					f(x)\deriv{g(x)}}{g(x)^2}
+				\end{gather}
+			\subsubsection{Chain Rule}
+				\begin{gather}
+					\deriv{f(g(x))} =
+					\deriv[g(x)]{f(g(x))}\deriv{g(x)}
+				\end{gather}
+		\subsection{Exonential and Logarithmic}
+			\begin{gather}
+				e = \lim_{x \to \infty} \left(1 +
+				\frac{1}{x}\right)^n
+			\end{gather}
+			\subsubsection{Exponential}
+				\begin{gather}
+					\deriv{e^x} = e^x \\
+					\deriv{a^x} = a^x\ln a
+				\end{gather}
+			\subsubsection{Logarithmic}
+				\begin{gather}
+					\deriv{\ln x} = \frac{1}{x} \qquad x > 0 \\
+					\deriv{\log_ax} = \frac{1}{x\ln a}
+				\end{gather}
+		\subsection{Trigonometric}
+			\begin{gather}
+				\lim_{\theta \to 0} \frac{\sin \theta}{\theta} =
+				1
+			\end{gather}
+			\subsubsection{Functions}
+				\begin{gather}
+					\deriv{\sin x} = \cos x \\
+					\deriv{\cos x} = -\sin x \\
+					\deriv{\tan x} = \sec^2 x
+				\end{gather}
+			\subsubsection{Reciprocal Functions}
+				\begin{gather}
+					\deriv{\csc x} = -\csc x \cot x \\
+					\deriv{\sec x} = \sec x \tan x \\
+					\deriv{\cot x} = -\csc^2 x
+				\end{gather}
+			\subsubsection{Inverse Functions}
+				\begin{gather}
+					\deriv{\arcsin x} = \frac{1}{\sqrt{1 -
+					x^2}} \\
+					\deriv{\arccos x} = \frac{-1}{\sqrt{1 -
+					x^2}}  \\
+					\deriv{\arctan x} = \frac{1}{x^2 + 1}
+				\end{gather}
+			\subsubsection{Inverse Reciprocal Functions}
+				\newcommand{\arccsc}[0]{\,\text{arccsc}\,}
+				\newcommand{\arcsec}[0]{\,\text{arcsec}\,}
+				\newcommand{\arccot}[0]{\,\text{arccot}\,}
+				\begin{gather}
+					\deriv{\arccsc x} = \frac{-1}{x^2\sqrt{1
+					- \frac{1}{x^2}}} \\
+					\deriv{\arcsec x} = \frac{1}{x^2\sqrt{1
+					- \frac{1}{x^2}}} \\
+					\deriv{\arccot x} = \frac{-1}{x^2 + 1}
+				\end{gather}
+	\section{Integration}
+
+\end{document}
