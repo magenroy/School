@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.18)  4 MAY 2014 19:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2014.4.18)  8 MAY 2014 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -121,14 +121,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [1
 
-] [2] [3] [4] (./calculus.aux) ) 
+] [2] [3] [4] [5] [6] (./calculus.aux) ) 
 Here is how much of TeX's memory you used:
  1142 strings out of 495029
  12658 string characters out of 6181523
- 64745 words of memory out of 5000000
+ 65745 words of memory out of 5000000
  4390 multiletter control sequences out of 15000+600000
  12403 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 27i,11n,26p,224b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,16n,26p,224b,194s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on calculus.dvi (4 pages, 10812 bytes).
+Output written on calculus.dvi (6 pages, 15468 bytes).

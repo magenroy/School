@@ -102,5 +102,49 @@
 					\deriv{\arccot x} = \frac{-1}{x^2 + 1}
 				\end{gather}
 	\section{Integration}
+		\subsection{Linearity}
+			\begin{gather}
+				\antider{af(x)} = a\antider{f(x)} \\
+				\antider{f(x) + g(x)} = \antider{f(x)} +
+				\antider{g(x)} \\
+				\therefore \antider{af(x) + bg(x)} = a\antider{f(x)}
+				+ b\antider{g(x)}
+			\end{gather}
+		\subsection{Methods}
+			\subsubsection{Inverse Power Rule}
+				\begin{gather}
+					\antider{x^n} =
+						\begin{cases}
+							\ln |x| + C & \text{if }
+							n = -1 \\
+							\frac{x^{n+1}}{n+1} + C
+							& \text{if } n \neq -1
+						\end{cases}
+				\end{gather}
+		\subsection{Exponential and Logarithmic}
+			\subsubsection{Exponential}
+				\begin{gather}
+					\antider{e^x} = e^x + C \\
+					\antider{a^x} = \frac{a^x}{\ln a} + C
+				\end{gather}
+			\subsubsection{Logarithmic}
+				\begin{gather}
+					\antider{\ln x} = x(\ln x - 1) + C
+					\qquad a \neq 0 \\
+					\antider{\log_ax} = x(\log_ax - \ln a) +
+					C \qquad a \neq 0
+				\end{gather}
+		\subsection{Trigonometric}
+			\subsubsection{Functions}
+				\begin{gather}
+					\antider{\sin ax} = \frac{-\cos ax}{a} +
+					C \qquad a \neq 0 \\
+					\antider{\cos ax} = \frac{\sin ax}{a} +
+					C \qquad a \neq 0 \\
+					\antider{\tan ax} = \frac{-\ln |\cos
+					ax|}{a} + C \qquad a \neq 0 \\
+					= \frac{\ln |\sec ax|}{a} + C \qquad a
+					\neq 0
+				\end{gather}
 
 \end{document}
